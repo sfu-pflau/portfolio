@@ -71,6 +71,17 @@ h3{
 	padding-right: 1rem;
 }
 
+/* header stuff */
+.header{
+  margin-top: 10rem;
+  text-align: center;
+}
+
+/* project preview */
+.project-preview{
+  margin-top: 2.5rem;
+}
+
 /*footer from existing portfolio*/
 footer ul{
   list-style-type: none;
