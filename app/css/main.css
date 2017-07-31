@@ -29,6 +29,10 @@ body{
   -webkit-tap-highlight-color: transparent;
 }
 
+a {
+  text-decoration: none;
+}
+
 p{
 	line-height: 1.5;
 	margin-bottom: 1.5rem;
@@ -79,9 +83,43 @@ h3{
 
 /* project preview */
 .project-preview{
-  margin-top: 2.5rem;
+
+}
+.display-container{
+  position: relative;
+  /*border: 1px solid #000;*/
+}
+
+.display-container *{
+  position: absolute;
+}
+.display-container .item-left{
+  margin: 10% 25% 10% 10px;
   border: 1px solid #000;
 }
+.display-container .item-right{
+  margin: 10% 25% 10% 150px;
+  border: 1px solid #000;
+}
+.project-preview-background-block{
+  background-color: red;
+  height: 250px;
+  width: 400px;
+}
+
+.item-twitch .project-preview-paragraph{
+  width:300px;
+  display: block;
+  background-color: blue;
+  left: 6rem;
+  top: 1.5rem;
+  padding:0;
+
+}
+.item- .project-preview-paragraph{
+  background-color: green;
+}
+
 
 /*footer from existing portfolio*/
 footer ul{
