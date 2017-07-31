@@ -101,10 +101,33 @@ h3{
   margin: 10% 25% 10% 150px;
   border: 1px solid #000;
 }
+
+.project-preview-background{
+  opacity: 0.25;
+}
+
 .project-preview-background-block{
-  background-color: red;
+  background-color: green;
   height: 250px;
   width: 400px;
+}
+
+.temp-red{
+  background-color: red;
+  height: 100px;
+  width: 200px;
+}
+
+.logo {
+
+}
+
+.project-preview-paragraph p {
+  color: #6441A4;
+  font-weight: 500;
+  font-size: 1.2rem;
+  top: 6.5rem;
+  left: 3rem;
 }
 
 .item-twitch .project-preview-paragraph{
