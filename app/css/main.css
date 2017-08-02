@@ -91,6 +91,68 @@ h3{
 }
 
 /* header stuff */
+.header-container{
+  height:60px;
+}
+.header{
+  padding: 20px 40px;
+  position: fixed;
+  /* https://stackoverflow.com/questions/25982135/why-does-left-50-transform-translatex-50-horizontally-center-an-element */
+  /* This centers it across all devices!*/
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 10;
+
+  transition: all 0.5s ease-in-out;
+}
+/* http://webdesignerwall.com/tutorials/easy-css-animation-transition-transforms */
+/* CSS translations */
+.header.-sticky{
+  width: 66%;
+}
+
+.header div{
+  display:inline-block;
+}
+
+.header .name{
+  float:left;
+}
+
+.header .links{
+  float:right;
+}
+
+.header a{
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.header a:hover{
+  text-decoration: underline;
+}
+
+.header a:visited{
+  color:black;
+}
+
+.links{
+  display: flex;
+}
+
+.links a{
+  margin-right: 1rem;
+}
+
+.links a{
+  display: inline-block;
+}
+
+/* hero stuff */
 .hero{
   margin-top: 10%;
   text-align: center;
@@ -140,8 +202,6 @@ h3{
 
 .temp-red{
   background-color: red;
-  height: 100px;
-  width: 200px;
 }
 
 .logo {
