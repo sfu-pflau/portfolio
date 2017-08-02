@@ -75,18 +75,41 @@ h3{
 	padding-right: 1rem;
 }
 
+/* https://stackoverflow.com/questions/1179928/how-can-i-put-a-vertical-line-down-the-center-of-a-div */
+/* Used to center align items visually */
+.centerline{
+  position: absolute;
+   width:100%;
+   height:100%;
+   background: linear-gradient(to right,
+                               transparent 0%,
+                               transparent calc(50% - 0.81px),
+                               black calc(50% - 0.8px),
+                               black calc(50% + 0.8px),
+                               transparent calc(50% + 0.81px),
+                               transparent 100%);
+}
+
 /* header stuff */
-.header{
-  margin-top: 10rem;
+.hero{
+  margin-top: 10%;
   text-align: center;
+  padding-bottom: 3%;
+}
+
+/* section container*/
+.section-container{
+  padding-bottom: 5%;
 }
 
 /* project preview */
 .project-preview{
-
+  height: 300px;
 }
 .display-container{
+  display: block;
   position: relative;
+  height: auto;
   /*border: 1px solid #000;*/
 }
 
@@ -104,12 +127,15 @@ h3{
 
 .project-preview-background{
   opacity: 0.25;
+  z-index: 1;
+  top:50px;
+  left:50px;
 }
 
 .project-preview-background-block{
   background-color: green;
   height: 250px;
-  width: 400px;
+  width: 350px;
 }
 
 .temp-red{
@@ -119,7 +145,11 @@ h3{
 }
 
 .logo {
+}
 
+.logo-personal {
+  margin:0 auto;
+  display: block;
 }
 
 .project-preview-paragraph p {
@@ -128,14 +158,15 @@ h3{
   font-size: 1.2rem;
   top: 6.5rem;
   left: 3rem;
+  z-index: 2;
 }
 
 .item-twitch .project-preview-paragraph{
   width:300px;
   display: block;
   background-color: blue;
-  left: 6rem;
-  top: 1.5rem;
+  left: 12rem;
+  top: 8rem;
   padding:0;
 
 }
@@ -160,7 +191,7 @@ footer li{
 	display: table-row;
 	height: 1px;
   text-align: center;
-  margin-top:10rem;
+  margin-top:5%;
 
 }
 
@@ -182,4 +213,11 @@ footer li{
 	font-size: 1rem;
 	text-align: center;
 	color:#6F90A4;
+}
+
+/* http://cssmojo.com/the-very-latest-clearfix-reloaded/ */
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
 }
