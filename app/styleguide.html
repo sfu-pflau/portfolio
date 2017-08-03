@@ -6,33 +6,86 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>PLau</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-	<link href="css/grids.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
+  <link href="css/animations.css" rel="stylesheet" />
+	<link href="css/grids.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
 	<!-- <link href="css/animations.css" rel="stylesheet"> Not needed ATM -->
   <link href="css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
-    <section id="analyses" class="col-12">
-      <div class="fixedsize centered">
-        <h1>
-          Project 1
-        </h1>
-        <p>
-          I’m interested in producing and making, from digital products to physical prototypes. I mainly deal in user interface design but have dabbled in product prototyping and interaction design. As a developing designer I try to observe the environment that a design will live in and shape that design around the particulars.
-        </p>
+    <div class="header-container col-12">
+      <header id="header" class="header">
+        <div class="name">
+          <a href="/">P Lau</a>
+        </div>
+        <div class="links">
+          <a href="/">Work</a>
+          <a href="/docs/ResumeSummer2016.pdf">Resume</a>
+          <a href="/about.html">About</a>
+        </div>
+      </header>
+    </div>
+    <div class="col-12">
+      <p class="fixedsize centered">
+        Go to:
+        <a href="#interactive_elements">Interactive Elements</a>,
+        <a href="#text_elements">Text Elements</a>
+      </p>
+    </div>
+    <div id="interactive_elements" class="col-12">
+      <div class="style-container fixedsize centered">
+        <div class="style-item">
+          <h2>A in-text Link</h2>
+          <h3>Code:</h3>
+          <code>&lt;a href="#"&gt;A Link&lt;/a&gt;</code>
+          <h3>Rendered element:</h3>
+          <a href="#">A Link</a>
+        </div>
+        <div class="style-item">
+          <h2>A hoverable Link</h2>
+          <h3>Code:</h3>
+          <code>&lt;div class="socialmedia"&gt;</code><br />
+          <code>&lt;a href="#"&gt;A hoverable Link&lt;/a&gt;</code><br />
+          <code>&lt;/div&gt;</code>
+          <h3>Rendered element:</h3>
+          <div class="socialmedia">
+            <a href="#">A hoverable Link</a>
+          </div>
+        </div>
       </div>
-    </section>
-    <section id="analyses" class="col-12">
-      <div class="fixedsize centered">
-        <h1>
-          Project 2
-        </h1>
-        <p>
-          I’m interested in producing and making, from digital products to physical prototypes. I mainly deal in user interface design but have dabbled in product prototyping and interaction design. As a developing designer I try to observe the environment that a design will live in and shape that design around the particulars.
-        </p>
+    </div>
+    <div id="text_elements" class="col-12">
+      <div class="style-container fixedsize centered">
+        <div class="style-item">
+          <h2>A paragraph</h2>
+          <h3>Code:</h3>
+          <code>&lt;p&gt;Hi there stranger&lt;/p&gt;</code>
+          <h3>Rendered element:</h3>
+          <p>
+            Hi there stranger
+          </p>
+        </div>
+        <div class="style-item">
+          <h2>A subtitle header</h2>
+          <h3>Code:</h3>
+          <code>&lt;p class="center-block-subtitle"&gt;Hi there subtitle&lt;/p&gt;</code>
+          <h3>Rendered element:</h3>
+          <p class="center-block-subtitle">
+            Hi there subtitle
+          </p>
+        </div>
+        <div class="style-item">
+          <h2>A subtitle header</h2>
+          <h3>Code:</h3>
+          <code>&lt;p class="center-block-title"&gt;Hi there Title&lt;/p&gt;</code>
+          <h3>Rendered element:</h3>
+          <p class="center-block-title">
+            Hi there Title
+          </p>
+        </div>
       </div>
-    </section>
-    <footer class="col-12 footer">
+    </div>
+    <footer class="col-12 footer clearfix">
       <div class="fixedsize centered">
         <ul>
           <li>
@@ -45,14 +98,16 @@
             <a href="about.html">About</a>
           </li>
           <li>
-            <a href="https://github.com/icyTan/portfolio">Git Repo</a>
+            <a href="https://github.com/sfu-pflau/portfolio">Git Repo</a>
           </li>
           <li>
             <a href="http://getpatlau.com/about.html">Existing Portfolio</a>
           </li>
         </ul>
-        <p class="footer-copyright">© Patrik Lau 2016</p>
+        <p class="footer-copyright">© Patrik Lau 2017</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
